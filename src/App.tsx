@@ -29,8 +29,8 @@ export default class App extends React.Component<{}, IOthello> {
     this.store.subscribe(this.handleStoreChanged);
     this.state = this.store.getState();
 
-    this.playerBlack = new AI("black");
-    // this.playerBlack = new Player("black");
+    // this.playerBlack = new AI("black");
+    this.playerBlack = new Player("black");
     this.playerWhite = new AI("white");
   }
 
